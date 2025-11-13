@@ -33,6 +33,11 @@ body {
     padding-right: 15px;
 }
 
+.page {
+    margin-top: 178px;
+    margin-bottom: 178px;
+}
+
 .title_h2 {
     font-family: "DM Serif Display";
     font-size: 50px;
@@ -205,18 +210,19 @@ body {
     z-index: -1;
 }
 
-.hero_title {
-    font-family: "DM Serif Display";
-    font-size: 85px;
-    line-height: 1.25;
+.hero_inf {
     max-width: 567px;
     margin: 0;
 }
 
+.title_h1 {
+    font-family: "DM Serif Display";
+    font-size: 85px;
+    line-height: 1.25;
+}
+
 .hero_text {
     width: 100%;
-    max-width: 567px;
-    margin: 0;
     color: var(--gray);
     line-height: 1.5;
 }
@@ -334,6 +340,7 @@ body {
     background-color: var(--beige);
     transform: translateY(-2px)
 }
+
 .black_button:hover .right_arrow {
     background-image: url(../img/right-arrow-after.svg);
 }
@@ -344,7 +351,6 @@ body {
     border-radius: 70px;
     background-color: var(--light-beige);
     height: 680px;
-    margin-bottom: 178px;
 }
 
 .swiper-slide {
@@ -353,7 +359,7 @@ body {
     align-items: center;
 }
 
-.swiper-slide > .title_h2 {
+.swiper-slide>.title_h2 {
     margin-top: 88px;
     margin-bottom: 90px;
 }
@@ -393,9 +399,9 @@ body {
     max-width: 750px;
     margin-top: 27px;
     margin-bottom: 34px;
-    }
+}
 
-    .sign {
+.sign {
     color: var(--gray);
     text-align: center;
     font-family: "Jost";
@@ -404,4 +410,88 @@ body {
     line-height: 1.5;
     letter-spacing: 0.5px;
     margin: 0 auto;
-    }
+}
+
+/*brand's*/
+
+.brands {
+    display: flex;
+    width: 100%;
+    max-width: 1090px;
+    margin: 0 auto;
+    gap: 108px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand_01 {
+    background-image: url(../img/brands/01.jpg);
+    width: 131px;
+    height: 43px;
+}
+
+.brand_02 {
+    background-image: url(../img/brands/02.jpg);
+    width: 102px;
+    height: 102px;
+}
+
+.brand_03 {
+    background-image: url(../img/brands/03.jpg);
+    width: 163px;
+    height: 43px;
+}
+
+.brand_04 {
+    background-image: url(../img/brands/04.jpg);
+    width: 144px;
+    height: 44px;
+}
+
+.brand_05 {
+    background-image: url(../img/brands/05.jpg);
+    width: 116px;
+    height: 47px;
+}
+
+/*stat*/
+
+.stat {
+    margin-top: 178px;
+    margin-bottom: 178px;
+    justify-content: center;
+}
+
+.stats {
+    display: flex;
+}
+
+.stats_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-basis: 25%;
+}
+
+.stats_item > .title_h1 {
+    color: var(--beige);
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+
+.stats_text {
+    color: var(--gray);
+    position: relative;
+    margin: 0 auto;
+}
+
+.stats_item:not(:last-child)::after {
+    content: ' ';
+    position: absolute;
+    width: 1px;
+    height: 130px;
+    background-color: var(--beige);
+}

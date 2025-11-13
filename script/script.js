@@ -12,4 +12,7 @@ var swiper = new Swiper(".swiperFeedback", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+
+    speed: 1200,
+    loop: true, 
 });
