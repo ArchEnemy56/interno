@@ -495,3 +495,132 @@ body {
     height: 130px;
     background-color: var(--beige);
 }
+
+/*articles*/
+
+.article_title,
+.news {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.news {
+    width: 100%;
+    max-width: 811px;
+    color: var(--gray);
+    margin-top: 12px;
+    margin-bottom: 52px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 27px;
+}
+
+.article_item {
+    width: 382px;
+    height: 521px;
+    padding: 21px;
+    box-sizing: border-box;
+    border: 1px solid rgba(231, 231, 231, 1);
+    border-radius: 62px;
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+    transition: var(--tr);
+}
+
+.article_item:hover {
+    background-color: var(--light-beige);
+    transition: var(--tr);
+}
+
+.article_item:hover .articles_link {
+    background-color: var(--white);
+    transition: var(--tr);
+}
+
+.articles_thumb {
+    position: relative;
+    overflow: hidden;
+    width: 340px;
+    height: 479px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.articles_img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate3d(0, 0, 0);
+    z-index: 1;
+    border-radius:  62px 62px 0 0 ;
+    max-width: 340px;
+    max-height: 289.27px;
+}
+
+.articles_tag {
+    position: absolute;
+    top: 228px;
+    left: 20px;
+    background-color: var(--white);
+    line-height: 1.5;
+    padding: 8px 16px;
+    border-radius:  8px 8px 8px 0;
+    font-size: 16px;
+    color: var(--gray);
+    z-index: 2;
+}
+
+.articles_title {
+    font-family: "DM Serif Display";
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: var(--dark);
+    width: 100%;
+    max-width: 284px;
+    position: absolute;
+    bottom: 90px;
+    letter-spacing: 0.3px;
+}
+
+.articles_title > a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.articles_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        margin-bottom: 16px;
+}
+
+.articles_date {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+.articles_link {
+    cursor: pointer;
+    background-image: url(../img/search-arrow.svg);
+    background-size: 6px 14px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: var(--light-beige);
+    border: none;
+    display: block;
+    border-radius: 100%;
+    width: 52px;
+    height: 52px;
+}
