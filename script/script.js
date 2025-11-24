@@ -16,3 +16,15 @@ var swiper = new Swiper(".swiperFeedback", {
     speed: 1200,
     loop: true, 
 });
+
+//checkbox
+
+const checkbox = document.getElementById('myCheckbox');
+
+checkbox.addEventListener('click', function() {
+    if (this.classList.contains('checked')) {
+    this.classList.remove('checked');
+    } else {
+    this.classList.add('checked');
+    }
+});
