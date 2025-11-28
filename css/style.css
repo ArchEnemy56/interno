@@ -1269,7 +1269,6 @@ body {
 .checkbox-container {
     display: flex;
     align-items: center;
-    font-family: Arial, sans-serif;
     margin: 10px 0;
 }
 
@@ -1381,4 +1380,68 @@ body {
     transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 100%; 
+}
+
+/*Contacns*/
+
+.contact_page {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.contact_title {
+    display: flex;
+    width: 683px;
+    margin: 0 auto;
+}
+
+.contact_title h2 {
+    letter-spacing: 0.3px;
+    font-family: "DM Serif Display";
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.contact_box {
+    display: flex;
+    gap: 54px;
+    position: relative;
+    align-items: center;
+}
+
+.contact_info {
+    border-radius: 50px;
+    background-color: var(--light-beige);
+    width: 349px;
+    height: 437px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 32px;
+}
+
+.contact_button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.contact-form_last {
+    margin-bottom: 133px;
+}
+
+.contact_item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact_info .social_icons {
+    justify-content: flex-start;
+    gap: 35px;
+}
+
+.cont_link:hover {
+    color: var(--beige);
 }

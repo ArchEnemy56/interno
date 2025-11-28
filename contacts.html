@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interno</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <nav>
+                    <ul class="header_nav">
+                        <li class="header_item"><a href="index.html" class="header_link">Home</a></li>
+                        <li class="header_item"><a href="portfolio.html" class="header_link">Our Projects</a></li>
+                        <li class="header_item"><a href="blog.html" class="header_link">Blog</a></li>
+                        <li class="header_item"><a href="portfolio.html" class="header_link">Portfolio</a></li>
+                        <li class="header_item"><a href="contacts.html" class="header_link">Contact</a></li>
+                        <li class="header_item"><button class="header_search" onclick="openModal()"><img
+                                    src="img/search.svg" alt="search"></button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="thumb">
+        <img src="img/Banner-contact.png" alt="banner" class="thumb_img">
+        <div class="thumb_info">
+            <h2 class="title_h2">Contact Us</h2>
+            <ul class="breadcrumbs">
+                <li><a href="/">
+                        <pre>Home </pre>
+                    </a></li>
+                <li><a href="">/ Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page contact_page">
+        <div class="container">
+            <div class="contact_title">
+                <h2 class="title_h2">We love meeting new people and helping them.</h2>
+            </div>
+            <div class="contact_box">
+                <div class="contact_info">
+                    <div class="contact_item">
+                        <img src="img/contact/mail.png" alt="contact">
+                        <a href="mailto:contact@interno.com" class="footer_link cont_link" target="_blank">contact@interno.com</a>
+                    </div>
+                    <div class="contact_item">
+                        <img src="img/contact/phone.png" alt="contact">
+                        <a href="tel:123456789" class="footer_link cont_link">(123) 456 - 7890</a>
+                    </div>
+                    <div class="contact_item">
+                        <img src="img/contact/web.png" alt="contact">
+                        <a href="www.yourdomain.com" class="footer_link cont_link">www.yourdomain.com</a>
+                    </div>
+                    <div class="social_icons">
+                        <a href="#" target="_blank"><img src="img/social/facebook.svg" alt="Facebook"
+                                class="social_icon"></a>
+                        <a href="#" target="_blank"><img src="img/social/twitter.svg" alt="Twitter"
+                                class="social_icon"></a>
+                        <a href="#" target="_blank"><img src="img/social/linkedIn.svg" alt="LinkedIn"
+                                class="social_icon"></a>
+                        <a href="#" target="_blank"><img src="img/social/instagram.svg" alt="Instagram"
+                                class="social_icon"></a>
+                    </div>
+                </div>
+                <form class="contact-form_full contact-form_last">
+                    <input type="text" class="contact-form_input" placeholder="Name">
+                    <input type="email" class="contact-form_input" placeholder="Email">
+                    <input type="website" class="contact-form_input" placeholder="Subject">
+                    <input type="phone" class="contact-form_input" placeholder="Phone">
+                    <textarea class="contact-form_textarea" placeholder="Hello I am interested in..."></textarea>
+
+                </form>
+                <button type="button" class="black_button contact_button">
+                    <a class="button_link" href="">Send Now</a>
+                    <div class="right_arrow"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg">
+        <div class="container">
+            <div class="footer">
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <div class="footer_inf">
+                    <p class="footer_text">55 East Birchwood Ave. Brooklyn, New York 11201</p>
+                    <a href="mailto:contact@interno.com" class="footer_link" target="_blank">contact@interno.com</a>
+                    <a href="tel:123456789" class="footer_link">(123) 456 - 7890</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay" id="overlay">
+        <div class="modal-search">
+            <div class="container">
+                <div class="modal-search_content">
+                    <input type="text" class="modal-search_input" placeholder="Search">
+                    <button type="submit" class="modal-search_btn"></button>
+                    <button type="button" class="modal-search_close" onclick="closeModal()"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
