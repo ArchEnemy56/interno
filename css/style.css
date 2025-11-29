@@ -157,7 +157,7 @@ body {
 .modal-search {
     background-color: var(--white);
     padding-top: 47px;
-    padding-bottom: 47px;
+    padding-bottom: 63px;
 }
 
 .modal-search_content {
@@ -1444,4 +1444,38 @@ body {
 
 .cont_link:hover {
     color: var(--beige);
+}
+
+/*Error*/
+
+.error_page { 
+    margin: 0;
+}
+
+.error_404 .title_h2 {
+    margin: 0;
+    font-size: 250px;
+    color: var(--beige);
+    letter-spacing: 0;
+}
+
+.error_txt {
+    width: 569px;
+    color: var(--dark);
+    font-family: "DM Serif Display";
+    font-size: 35px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    margin: 0;
+    margin-bottom: 23px;
+}
+
+.error_img {
+    border-radius: 0px 0px 0px 353px;
+    overflow: hidden;
+}
+
+.error_page .container {
+    display: flex;
+    align-items: center;
 }
