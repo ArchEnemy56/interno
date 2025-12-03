@@ -1,0 +1,282 @@
+@media (max-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 900px;
+    }
+
+    .title_h3 {
+        font-size: 20px;
+    }
+
+    .error {
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+
+    .err_cont .title_h2 {
+        font-size: 200px;
+    }
+
+    .error_text {
+        font-size: 30px;
+        max-width: 450px;
+    }
+
+    .footer_inf {
+        display: grid;
+        grid-template-columns: 1fr 170px;
+        grid-template-rows: repeat(2, auto);
+        gap: 0px 50px;
+        align-items: flex-start;
+    }
+
+    .footer_text {
+        grid-row: 1 / 3;
+    }
+
+    .footer_link {
+        text-align: right;
+    }
+
+    .hero {
+        height: calc(100vh - 145px);
+    }
+
+    .about_thumb {
+        flex-basis: 50%;
+    }
+
+    .about_text {
+        flex-basis: 45%;
+    }
+
+    .about {
+        gap: 5%;
+    }
+
+    .about_text p {
+        letter-spacing: 0;
+    }
+
+    .title_h2 {
+        font-size: 40px;
+    }
+
+    .number :first-child {
+        font-size: 20px;
+    }
+
+    .phone {
+        width: 74px;
+        height: 74px;
+    }
+
+    .button_link {
+        font-size: 16px;
+    }
+
+    .swiper_text {
+        font-size: 25px;
+    }
+
+    .sign {
+        font-size: 20px;
+    }
+
+    .swiper-button-next {
+        margin-right: 50px;
+    }
+
+    .swiper-button-prev {
+        margin-left: 50px;
+    }
+
+    .brands {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 13vw;
+    }
+
+    .articles_thumb {
+        height: 250px;
+    }
+
+    .articles_date,
+    .articles_tag {
+        font-size: 14px;
+    }
+
+    .articles {
+        gap: 15px;
+    }
+
+    .article_item .title_h3 {
+        margin-bottom: 10px;
+    }
+
+    .article_item {
+        padding: 10px 10px 23px 10px;
+        border-radius: 45px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .swiper_text,
+    .swiper-slide .title_h2 {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .header_nav {
+        margin: 0;
+    }
+
+    .header_item {
+        margin-left: 20px;
+    }
+
+    .header_link {
+        font-size: 16px;
+    }
+
+    .title_h2 {
+        text-align: center;
+    }
+
+    .articles {
+        grid-template-columns: 1fr;
+    }
+
+    .page {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+    .hero {
+        margin-bottom: 50px;
+    }
+
+    .stat {
+        margin: 0;
+    }
+
+    .stats_text {
+        font-size: 16px;
+    }
+
+    .contact-form {
+        grid-template-areas:
+        "name"
+        "email"
+        "message";
+        width: 100%;
+    }
+
+    .contact-form_textarea,
+    .contact-form_input,
+    .contact-form_input:focus,
+    .contact-form_input:active,
+    .contact-form_textarea:focus,
+    .contact-form_textarea:active {
+        font-size: 16px;
+    }
+
+    .footer_inf {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .footer_text {
+        text-align: right;
+    }
+
+    .footer {
+        align-items: start;
+    }
+
+    .contact_box {
+        flex-direction: column;
+        gap: 30px
+    }
+
+    .contact_button {
+        position: static;
+    }
+
+    .contact-form_last {
+        margin-bottom: 60px;
+    }
+
+    .tab_link {
+        font-size: 16px;
+        padding: 17px 33px;
+    }
+
+    .tab_content_box {
+    grid-template-columns: 1fr;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .about_img {
+        position: static;
+    }
+
+    .swiper_text,
+    .swiper-slide .title_h2 {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .sign,
+    .swiper_text {
+        font-size: 20px;
+    }
+
+    .err_cont .title_h2 {
+        font-size: 150px;
+    }
+
+    .error_text {
+        font-size: 18px;
+        max-width: 250px;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .post  {
+        margin-bottom: 100px;
+    }
+
+    .contact-form_full,
+    .widget-latest,
+    .social,
+    .save_form {
+        background-color: var(--white);
+    }
+
+    .text_bg {
+    font-size: 16px;
+    }
+}
