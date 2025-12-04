@@ -154,6 +154,10 @@
         font-size: 16px;
     }
 
+    .title_h1 {
+    font-size: 11vw;
+}
+
     .title_h2 {
         text-align: center;
     }
@@ -181,9 +185,9 @@
 
     .contact-form {
         grid-template-areas:
-        "name"
-        "email"
-        "message";
+            "name"
+            "email"
+            "message";
         width: 100%;
     }
 
@@ -228,7 +232,7 @@
     }
 
     .tab_content_box {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .about {
@@ -265,8 +269,13 @@
         display: block;
     }
 
-    .post  {
+    .post {
         margin-bottom: 100px;
+    }
+
+    .post_sand {
+        display: flex;
+        justify-content: center;
     }
 
     .contact-form_full,
@@ -276,7 +285,117 @@
         background-color: var(--white);
     }
 
+    .contact-form_full {
+        grid-template-areas:
+        "name"
+        "email"
+        "Website"
+        "Phone"
+        "message";
+        width: 100%;
+    }
+
     .text_bg {
-    font-size: 16px;
+        font-size: 16px;
+    }
+
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+    }
+
+    .stats_item::after {
+        content: ' ';
+        position: absolute;
+        width: 1px;
+        height: 130px;
+        background-color: var(--beige);
+    }
+
+    .article_main_item {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .contact_page {
+        margin-bottom: 90px;
+    }
+
+    .header_menu {
+        display: block;
+    }
+    .header > nav {
+        display: none;
+    }
+
+    .header {
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    .hero {
+        height: calc(100vh - 96px);
+        border-radius: 0 0 0 40vh;
+    }
+
+    .subscribe {
+        padding: 40px;
+    }
+
+    .tabs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tab_link  {
+        padding: 25px 63px;
+    }
+
+    .social {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .stats {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .stats_item {
+        border-bottom: 1px solid var(--beige);
+    }
+
+    .stats_item:last-child {
+        border-bottom: none;
+    }
+
+    .stats_item::after {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_text,
+    .footer_link {
+        text-align: center;
+    }
+
+    .footer_logo {
+        margin-bottom: 30px;
+    }
+
+    .bg {
+        padding: 40px 0;
+    }
+
+    .contact {
+        margin-bottom: 77px;
     }
 }

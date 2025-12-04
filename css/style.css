@@ -108,6 +108,18 @@ body {
     cursor: pointer;
 }
 
+.header_menu {
+    display: none;
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/burger.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 /*footer*/
 
 .bg {
@@ -154,16 +166,35 @@ body {
     transition: var(--tr);
 }
 
-.modal-search {
+.modal-search,
+.modal {
     background-color: var(--white);
     padding-top: 47px;
     padding-bottom: 63px;
+}
+
+.modal {
+    position: relative;
+}
+
+.modal .header_item {
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.modal .header_item:last-child {
+    margin-bottom: 0px;
 }
 
 .modal-search_content {
     display: flex;
     align-items: center;
     gap: 38px;
+}
+
+.modal_content .header_nav {
+    flex-direction: column;
+    margin: 0;
 }
 
 .modal-search_input {
@@ -195,7 +226,8 @@ body {
     height: 52px;
 }
 
-.modal-search_close {
+.modal-search_close,
+.modal_close {
     cursor: pointer;
     background-image: url(../img/close.svg);
     background-repeat: no-repeat;
@@ -204,6 +236,12 @@ body {
     display: block;
     width: 22px;
     height: 22px;
+}
+
+.modal_close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 /*Hero*/
@@ -660,7 +698,8 @@ body {
 
 .subscribe-box {
     border-radius: 18px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 75px;
     display: flex;
 }
@@ -865,8 +904,10 @@ body {
 }
 
 .article_main_content {
-    width: 489px;
-    height: 375px;
+    width: 100%;
+    max-width: 489px;
+    height: 100%;
+    max-height: 375px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1330,7 +1371,6 @@ body {
 .tabs {
     width: 100%;
     max-width: 873px;
-    height: 73px;
     border: 1px solid var(--beige);
     border-radius: 18px;
     display: flex;
@@ -1402,7 +1442,8 @@ body {
 
 .contact_title {
     display: flex;
-    width: 683px;
+    width: 100%;
+    max-width: 683px;
     margin: 0 auto;
 }
 
